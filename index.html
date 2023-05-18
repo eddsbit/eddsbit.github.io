@@ -9,6 +9,14 @@
     <script src='main.js'></script>
 </head>
 <body>
-    <button style="background-color: #333333;color: #00FF00; border-radius: 5px">click me</button>
+    <button onclick="doSomething()"style="background-color: #333333;color: #00FF00; border-radius: 5px">click me</button>
+
+    <p id="test">Hello</p>
+
+    <script>
+        function doSomething(){
+            document.getElementById("test").innerHTML = "Hi"
+        }
+    </script>
 </body>
 </html>
