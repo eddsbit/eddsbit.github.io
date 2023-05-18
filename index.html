@@ -1,37 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eddsbit</title>
-    <link rel="stylesheet" href="style.css"
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Text Button Website</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
 </head>
 <body>
-    <h1>Hello,</h1>
-    <p>Links:</p>
-    <a href="https://github.com/"
-    target="_blank">Link to github</a>
-    <a href="https://www.google.com/"
-    target="_blank">Link to google</a>
-    <button>Switch Color</button>
-    <script type="text/javascript">
-        var color = ["#222f3e", "#ee5253", "#0abde3", "#10ac84"
-            , "#222f3e", "#5f27cd"];
-        var i = 0;
-        document.querySelector("button").addEventListener("click",
-            function(){
-            i = i < color.length ? ++i : 0;
-        document.querySelector("body").style.background = color[i]
-        })
-        
-    </script>
-    <audio controls src="Test_ogg_mp3_48kbps.wav"></audio>
-    <p>Download music wav file</p>
-    <a href="Test_ogg_mp3_48kbps.wav" download>Download Wav Music</a>
-    <p>Audio from wikipedia</p>
-    <p>Download text file</p>
-    <a href="info.txt" download>Download text file</a>
-    </div>
+    <button style="background-color: #333333;color: #00FF00;">click me</button>
 </body>
 </html>
