@@ -2,9 +2,10 @@ body
 {
     margin: 0;
     padding: 0;
+    height: 100;
     background: #8AF3F9;
 }
-.button2
+.colorButton
 {
     position: absolute;
     top: 50%;
