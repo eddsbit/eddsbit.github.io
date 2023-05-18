@@ -6,25 +6,6 @@ body{
     background-size: cover;
     display : flex;
 }
-
-.button{
-    font-family: "Roboto", sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    width: 160px;
-    padding: 20px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #fff;
-    border-radius:  5px;
-    cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.button:hover, .button:focus, button:active{
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    -webkit-transform: scale(1.1);
-    transform:scale(1.1);
-}
 .button2
 {
     position: absolute;
