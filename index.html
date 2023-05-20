@@ -9,19 +9,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button onclick="doSomething()"style="background-color: #333333;color: #00FF00; border-radius: 5px">click me</button>
     <button class="colorButton" style="border-radius: 5px;" >Switch Color</button>
 
-    <script>
-        function doSomething(){
-            document.getElementById("test").innerHTML = "Hi"
-        }
-    </script>
-    
-    <form>
-        <input type="text">
+    <form action="action_page.php" method="POST">
+
+        <div>
+        <label for="fname">first name:</label>
+        <input type="text" id="fname" name="fname" required>
+        </div>
+
+        <br>
+        
+        <div>
+        <label for="lname">last name:</label>
+        <input type="text" id="lname" name="lname" required>
+        </div>
+
+        <br>
+
+        <div>
+            <input type="reset">
+        </div>
+
+        <br>
+
+        <div>
+            <input type="submit">
+        </div>
+
     </form>
 
-    <p id="test">Hello</p>
 </body>
 </html>
