@@ -8,8 +8,50 @@
 </head>
 <body>
     <h1>Second Page</h1>
-    <a href="index.html">First Page</a> <br>
-    <audio controls src="Test_ogg_mp3_48kbps.wav">
-    <a href="Test_ogg_mp3_48kbps.wav" download>Download Wav Music</a>
+
+    <form action="forms.html" method="GET">
+
+        <div>
+        <label for="fname">first name:</label>
+        <input type="text" id="fname" name="fname" required>
+        </div>
+
+        <br>
+        
+        <div>
+        <label for="lname">last name:</label>
+        <input type="text" id="lname" name="lname" required>
+        </div>
+
+        <br>
+
+        <div>
+            <input type="reset">
+        </div>
+
+        <br>
+
+        <div class="container">
+            <button type="submit" class="btn" onclick="openPopup()">submit</button>
+            <div class="popup" id="popup">
+                <h2>Thank You!</h2>
+                <p>Your details have been succesfully submitted. Thanks!</p>
+                <button type="button" onclick="closePopup()">OK</button>
+            </div>
+        </div>
+
+<script>
+let popup = document.getElementById("popup");
+function openPopup(){
+    popup.classList.add("open-popup");
+}
+function closePopup(){
+    popup.classList.remove("open-popup");
+}
+</script>
+    
+
+    </form>
+
 </body>
 </html>
