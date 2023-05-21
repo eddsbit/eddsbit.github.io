@@ -31,12 +31,27 @@
 
         <br>
 
-        <div>
-            <input type="submit">
+        <div class="container">
+            <button type="submit" class="btn" onclick="openPopup()">submit</button>
+            <div class="popup" id="popup">
+                <h2>Thank You!</h2>
+                <p>Your details have been succesfully submitted. Thanks!</p>
+                <button type="button" onclick="closePopup()">OK</button>
+            </div>
         </div>
+
+<script>
+let popup = document.getElementById("popup");
+function openPopup(){
+    popup.classList.add("open-popup");
+}
+function closePopup(){
+    popup.classList.remove("open-popup");
+}
+</script>
+    
 
     </form>
 
-    
 </body>
 </html>
