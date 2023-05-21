@@ -8,8 +8,35 @@
 </head>
 <body>
     <h1>Second Page</h1>
-    <a href="index.html">First Page</a> <br>
-    <audio controls src="Test_ogg_mp3_48kbps.wav">
-    <a href="Test_ogg_mp3_48kbps.wav" download>Download Wav Music</a>
+
+    <form action="forms.html" method="GET">
+
+        <div>
+        <label for="fname">first name:</label>
+        <input type="text" id="fname" name="fname" required>
+        </div>
+
+        <br>
+        
+        <div>
+        <label for="lname">last name:</label>
+        <input type="text" id="lname" name="lname" required>
+        </div>
+
+        <br>
+
+        <div>
+            <input type="reset">
+        </div>
+
+        <br>
+
+        <div>
+            <input type="submit">
+        </div>
+
+    </form>
+
+    
 </body>
 </html>
